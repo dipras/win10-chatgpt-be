@@ -1,0 +1,22 @@
+{
+  "name": "win10-chatgpt-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipras/win10-chatgpt-be.git"
+  },
+  "author": "Dipras",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/dipras/win10-chatgpt-be/issues"
+  },
+  "homepage": "https://github.com/dipras/win10-chatgpt-be#readme",
+  "dependencies": {
+    "dotenv": "^16.2.0"
+  }
+}
