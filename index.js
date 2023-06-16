@@ -69,7 +69,8 @@ http.createServer(async (req,res) => {
     }
     var params = url.parse(req.url, true).query;
     let result = {};
-    const base64Credentials =  req.headers.authorization.split(' ')[1];
+    let base64Credentials =  req.headers.authorization || ' default';
+    base64Credentials = base64Credentials.split(' ')[1];
     const credentials = Buffer.from(base64Credentials, 'base64').toString('ascii');
     if(credentials === process.env.AUTH_SECRET) {
         result = await exec(params)
